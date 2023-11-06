@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ACP_backgroundAnchorPane" prefHeight="600.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ffffffff0x.beryenigma.App.View.Modules.Unlimited.LifeValueCalculation.LifeValueCalculationController">
+   <Label fx:id="JLB_title" alignment="CENTER" layoutX="24.0" layoutY="38.0" prefHeight="70.0" prefWidth="610.0" text="LiFeValue" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <font>
+         <Font name="Jokerman" size="45.0" />
+      </font>
+   </Label>
+   <AnchorPane fx:id="ACP_controllerAnchorPane" layoutX="84.0" layoutY="157.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+      <children>
+         <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="53.0" prefWidth="200.0">
+            <children>
+               <Label layoutX="4.0" layoutY="13.0" text="生命上限：" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="13.0">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Label>
+               <JFXTextField fx:id="maxLifeValue" alignment="CENTER" layoutX="84.0" layoutY="13.0" prefHeight="23.0" prefWidth="100.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="13.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane layoutX="214.0" layoutY="14.0" prefHeight="53.0" prefWidth="200.0">
+            <children>
+               <Label layoutX="4.0" layoutY="13.0" text="当前状态：" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="13.0">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Label>
+               <JFXTextField fx:id="nowLifeValue" alignment="CENTER" layoutX="84.0" layoutY="13.0" prefHeight="23.0" prefWidth="100.0" promptText="B/L/A" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="13.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane layoutX="99.0" layoutY="151.0" prefHeight="53.0" prefWidth="230.0">
+            <children>
+               <Label layoutX="4.0" layoutY="13.0" text="冲击伤害(B)：" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="13.0">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Label>
+               <JFXTextField fx:id="Bdamage" alignment="CENTER" layoutX="105.0" layoutY="13.0" prefHeight="23.0" prefWidth="110.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="13.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane layoutX="99.0" layoutY="217.0" prefHeight="53.0" prefWidth="230.0">
+            <children>
+               <Label layoutX="4.0" layoutY="13.0" text="严重伤害(L)：" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="13.0">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Label>
+               <JFXTextField fx:id="Ldamage" alignment="CENTER" layoutX="105.0" layoutY="13.0" prefHeight="23.0" prefWidth="110.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="13.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane layoutX="99.0" layoutY="282.0" prefHeight="53.0" prefWidth="230.0">
+            <children>
+               <Label layoutX="4.0" layoutY="13.0" text="恶性伤害(A)：" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="13.0">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Label>
+               <JFXTextField fx:id="Adamage" alignment="CENTER" layoutX="105.0" layoutY="13.0" prefHeight="23.0" prefWidth="110.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="13.0" />
+            </children>
+         </AnchorPane>
+         <Separator layoutX="14.0" layoutY="67.0" prefWidth="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="200.0" />
+         <JFXTextArea fx:id="resault" editable="false" layoutX="396.0" layoutY="76.0" prefHeight="434.0" prefWidth="200.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="75.0" />
+         <JFXButton fx:id="confirm" buttonType="RAISED" layoutX="305.0" layoutY="405.0" onAction="#confirm" prefHeight="50.0" prefWidth="101.0" text="计算" />
+         <JFXButton fx:id="reset" buttonType="RAISED" layoutX="179.0" layoutY="405.0" onAction="#reset" prefHeight="50.0" prefWidth="101.0" text="重置" />
+      </children></AnchorPane>
+</AnchorPane>
